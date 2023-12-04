@@ -1,4 +1,5 @@
 /* Navigation Bar  */
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ body::-webkit-scrollbar-track {
 }
 
 .logo {
-  font-family: cursive;
+  font-family: 'Pacifico', cursive;
   color: #00d4ff;
   font-size: 25px;
   border-radius: 10px;
