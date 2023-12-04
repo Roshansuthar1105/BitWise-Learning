@@ -12,8 +12,8 @@ let i1=1;
     // Update background image based on the visibility state
     const isNavVisible = document.body.classList.contains("show-side-nav");
     showButton.style.backgroundImage = isNavVisible
-      ? "url(3dlogo/menu-2.png)"
-      : "url(3dlogo/menu-1.png)";
+      ? "url(3dlogo/menu2.png)"
+      : "url(3dlogo/menu1.png)";
   });
 
   // Add click event listener to the document to hide the side nav when clicking anywhere on the screen
@@ -23,7 +23,7 @@ let i1=1;
       // Remove 'show' class from the body
       document.body.classList.remove("show-side-nav");
       // Update background image when hiding the side nav
-      showButton.style.backgroundImage = "url(3dlogo/menu-1.png)";
+      showButton.style.backgroundImage = "url(3dlogo/menu1.png)";
     }
   });
 
