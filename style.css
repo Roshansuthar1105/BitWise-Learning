@@ -388,8 +388,10 @@ CSS for shape divider
   position: relative;
 }
 .team-card img {
-  height: 80%;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: -48px 0px;
 }
 .member-name {
   bottom: 20px;
@@ -1474,7 +1476,12 @@ body {
   .ctg-card {
     width: 60%;
   }
-
+ .nav-a {
+    font-size: 28px;
+  }
+  .nav-a:hover{
+    height:0px;
+  }
   .team-card-container {
     justify-content: space-evenly;
   }
@@ -1513,8 +1520,8 @@ body {
     font-size: 15px;
   }
   .scroll-up {
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
     bottom: 25px;
     right: 25px;
     border-radius: 5px;
@@ -1618,8 +1625,8 @@ body {
   .our-team {
     padding: 30px 0;
   }
-  .team-card {
-    width: 95%;
+ .team-card {
+    width: 100%;
   }
   .nav-items {
     width: 90%;
@@ -1628,4 +1635,177 @@ body {
   .pcreator-heading {
     font-size: 25px;
   }
+}
+
+.side-nav-show {
+  border: 3px solid white;
+  font-size: 0px;
+  background-color: rgb(100, 100, 100, 0.5);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+.side-nav.show {
+  border: 3px solid white;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 425px) {
+  .nav-items {
+    width: 90%;
+    box-shadow: 0 0 0;
+    height: 55px;
+  }
+  .cg-divs,
+  .roadmaps,
+  .cg-nav,
+  .pcreators {
+    margin: 10px;
+    margin-left: 10px;
+  }
+  #cheading {
+    font-size: 28px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 90px;
+  }
+  .nav-title {
+    font-size: 20px;
+  }
+  .nav-img {
+    height: 85%;
+    width: 50px;
+    margin: 0 0 0 5px;
+  }
+  .cg-headings,
+  .roadmaps-heading {
+    padding: 10px 0;
+    font-size: 28px;
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  .cg-img {
+    width: 280px;
+    height: 156px;
+  }
+  .cg-card{
+    width: 300px;
+  }
+  .fav-icon{
+    right: 8%;
+  }
+  .cg-title {
+    font-size: 13px;
+  }
+  .cg-creator {
+    font-size: 15px;
+  }
+  .cg-btn a {
+    width: 200px;
+    font-size: 19px;
+  }
+  .cg-divs {
+    max-height: 525px;
+  }
+  .cg_viewmore {
+    padding: 10px;
+  }
+  .side-nav {
+    color: #000;
+    height: 84%;
+    top: 8%;
+  }
+  .side-nav-show {
+    height: 65px;
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    left: 3%;
+    font-size: 28px;
+    color: #00d4ff;
+  }
+  #clrbtn {
+    top: 12px;
+    right: 15px;
+    width: 130px;
+  }
+  .pcreators img {
+    height: 90px;
+    width: 90px;
+  }
+  .side-nav a {
+    height: 65px;
+    width: 65px;
+  }
+  .logo {
+    font-size: 17px;
+  }
+  .nav-a {
+    font-size: larger;
+  }
+  .nav-a::after {
+    height: 0;
+  }
+  .main-div {
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+  .our-team {
+    color: red;
+  }
+  .categories {
+    padding: 10px 10px 100px 10px;
+  }
+  .ctg-card-cont {
+    padding: 10px 10px 50px 10px;
+  }
+  .ctg-card {
+    width: 95%;
+  }
+  .vm {
+    min-height: 100px;
+  }
+  .team-container {
+    margin: 10px;
+  }
+  .team-heading {
+    padding: 10px;
+    margin: 10px;
+  }
+  .team-card-container {
+    padding: 0;
+  }
+  .wrapper {
+    width: 420px;
+    background: transparent;
+    border: 0px;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: relative;
+  }
+  .register-link p{
+    text-align: left;
+    font-size: 14px;
+  }
+  #login_btn{
+    position: absolute;
+    right: 48px;
+    top: 5px;
+    padding: 8px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 375px) {
+#login_btn{
+  top: 40px;
+  right: 5px;
+}
+.logo{
+  font-size: 5.5vw;
+}
 }
